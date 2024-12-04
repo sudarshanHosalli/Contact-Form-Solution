@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://github.com/yourusername/contact-form-solution)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://github.com/sudarshanHosalli/Contact-Form-Solution)
+- Live Site URL: [Live Demo](https://funny-tarsier-c69050.netlify.app/)
 
 ## My Process
 
@@ -95,8 +95,8 @@ In future projects, I want to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [yourusername](https://github.com/yourusername)
+- Frontend Mentor - [@sudarshanHosalli](https://www.frontendmentor.io/profile/sudarshanHosalli)
+- GitHub - [sudarshanHosalli](https://github.com/sudarshanHosalli)
 
 ## Acknowledgments
 
