@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form-conatiner {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+header > h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(187, 24%, 22%);
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-row,
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 0.9rem;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  outline: 1.5px solid hsl(186, 15%, 59%);
+  color: hsl(187, 24%, 22%);
+  transition: outline 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.form-row > label {
+  color: hsl(187, 24%, 22%);
+}
+
+.form-row > label > span {
+  color: hsl(169, 82%, 27%);
+  margin-left: 0.3rem;
+}
+
+.form-row input:hover {
+  outline: 1.5px solid hsl(169, 82%, 27%);
+}
+
+.form-row input:focus {
+  outline: 1.5px solid hsl(169, 82%, 27%);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkbox-group legend {
+  font-size: 16px;
+  color: hsl(187, 24%, 22%);
+  margin-bottom: 1rem;
+}
+
+.checkbox-group legend span{
+  color: hsl(169, 82%, 27%);
+  margin-left: 0.3rem;
+}
+
+.agree-checkbox-container > label > span{
+  color: hsl(169, 82%, 27%);
+  margin-left: 0.3rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  outline: 1.5px solid hsl(186, 15%, 59%);
+  padding: 0.9rem;
+  font-size: 18px;
+  border: none;
+  color: hsl(187, 24%, 22%);
+  cursor: pointer;
+}
+
+.checkboxes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  outline: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, outline 0.3s;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: hsl(169, 82%, 27%);
+  border-radius: 100%;
+  display: none;
+}
+
+.message-container > label {
+  color: hsl(187, 24%, 22%);
+}
+
+.message-container > label > span {
+  color: hsl(169, 82%, 27%);
+  margin-left: 0.3rem;
+}
+
+.message-container > textarea:hover {
+  outline: 1.5px solid hsl(169, 82%, 27%);
+}
+
+.message-container > textarea:focus {
+  outline: 1.5px solid hsl(169, 82%, 27%);
+}
+
+.message-container > textarea {
+  resize: none;
+  width: auto;
+  height: 130px;
+  padding: 0.9rem;
+  font-family: inherit;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  outline: 1.5px solid hsl(186, 15%, 59%);
+  color: hsl(187, 24%, 22%);
+  transition: outline 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.agree-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.agree-checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.agree-custom-checkbox {
+  width: 20px;
+  height: 20px;
+  outline: 2px solid #ccc;
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, outline 0.3s;
+}
+
+.check {
+  width: 100%;
+  display: none;
+}
+
+.submit-button {
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: hsl(169, 82%, 10%);
+}
+
+.error-msg {
+  color: hsl(0, 66%, 54%);
+  font-size: 17px;
+}
+
+.modal-container {
+  padding: 1rem;
+  background-color: hsl(187, 24%, 22%);
+  border-radius: 10px;
+  position: fixed;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transform: translateY(-150px);
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.show-modal-container {
+  transform: translateY(0px);
+}
+
+.img-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-text > p {
+  font-size: 17px;
+  color: hsl(0, 0%, 100%);
+}
+
+.modal-container > span {
+  color: hsl(148, 38%, 91%);
+}
+
+@media (min-width: 600px) {
+  .first-input-section {
+    flex-direction: row;
+  }
+
+  .first-input-section > .form-row {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-conatiner {
+    width: 900px;
+    margin: 2rem 0;
+  }
+
+  header > h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="form-conatiner">
+      <header><h1>Contact US</h1></header>
+      <form class="userForm">
+        <div class="first-input-section">
+          <div class="form-row">
+            <label for="firstName"
+              >First Name <span aria-label="required">*</span></label
+            >
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="firstName input"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="lastName" class="required"
+              >Last Name <span aria-label="required">*</span></label
+            >
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="lastName input"
+              required
+            />
+          </div>
+
+        </div>
+
+        <div class="form-row full-width">
+          <label for="email" class="required"
+            >Email Address<span aria-label="required">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="email input"
+            required
+          />
+        </div>
+        <fieldset class="checkbox-group">
+          <legend>Query Type <span aria-label="required">*</span></legend>
+          <div class="checkboxes-container">
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="generalEnquiry"
+                class="single-checkbox"
+              />
+              <span class="custom-checkbox">
+                <span class="dot"></span>
+              </span>
+              <label for="generalEnquiry">General Enquiry</label>
+            </div>
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="supportRequest"
+                class="single-checkbox"
+              />
+              <span class="custom-checkbox">
+                <span class="dot"></span>
+              </span>
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="message-container form-row">
+          <label for="message"
+            >Message <span aria-label="required">*</span></label
+          >
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            class="message input"
+            required
+          ></textarea>
+        </div>
+
+        <div class="agree-checkbox-container">
+          <input class="agree-checkbox" type="checkbox" id="agree" />
+          <span class="agree-custom-checkbox">
+            <img
+              class="check"
+              src="./assets/images/icon-checkbox-check.svg"
+              alt="check"
+            />
+          </span>
+          <label for="agree"
+            >I consent to being contacted by the team <span span aria-label="required">*</span></label
+          >
+        </div>
+
+        <button class="submit-button">Submit</button>
+      </form>
+    </main>
+
+    <div
+      class="modal-container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="img-text">
+        <img
+          src="./assets/images/icon-success-check.svg"
+          alt="message-sent-successfully"
+        />
+        <p id="modalTitle">Message Sent!</p>
+      </div>
+      <span>Thanks for completing the form. We'll be in touch soon!</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
